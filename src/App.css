@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+.login-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-section{
+    display: flex;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.menu-list{
+    display: flex;
+    list-style-type: none;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.menu-list li{
+    padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-area{
+    border-bottom: 1px solid #666;
+    height: 50%;
+    position: absolute;
+    right: 20px;
+     top: 50%;
+    transform: translateY(-50%);
+}
+
+.search{
+   border: none;
+}
+input:focus{
+    outline: none;
+}
+
+.pr-image{
+    width: 250px;
+}
+
+.product-card:hover{
+    transform: scale(1.1);
+    background-color: #fff;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input{
+    margin: 20px
+}
+
+.detail-image{
+   display: flex;
+   margin: 0 auto;
+}
+
+
+.select{
+    display: block;
+    margin-bottom: 50px;
+}
+
+.add-btn{
+    width: 200px;
+    outline: none;
+    border: none;
+    background-color: #000;
+    color: #fff;
 }
